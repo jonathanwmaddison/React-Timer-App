@@ -1,0 +1,12 @@
+.controls {
+	display: flex; //flex allows me to easily center content.
+	justify-content: center;
+
+	.button {
+		padding: .75rem 3rem;
+
+	}
+	.button:first-child {
+		margin-right: 1.5rem;
+	}
+}
