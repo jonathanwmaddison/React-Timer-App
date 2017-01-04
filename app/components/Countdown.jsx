@@ -46,7 +46,7 @@ var Countdown = React.createClass({
 	handleStatusChange: function (newStatus) {
 		this.setState({countdownStatus: newStatus});
 	},
-	componentWillUnmount: function () {
+	componentWillUnmount: function () { //these detect state changes and can change variables when there are changes. THis is called a lifecycle 
 		clearInterval(this.timer);
 		this.timer=undefined;
 	},
@@ -62,6 +62,7 @@ var Countdown = React.createClass({
 
 		return (
 			<div>
+				<h1 className="page-title"> Countdown App </h1>
 				<Clock totalSeconds={count}/>
 				{renderControlArea()}
 			</div>
