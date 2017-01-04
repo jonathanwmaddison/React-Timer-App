@@ -1,5 +1,14 @@
 @import "base/variables";
+
+//Foundation note: this allows us to configure base settings for foundation (instead of editing individual items through scss )
+@import "base/foundation-settings";
+@import "foundation";
+@include foundation-everything;
+
+
+//Components
 @import "components/navigation";
 @import "components/clock";
 @import "components/controls";
 @import "components/page-title";
+
